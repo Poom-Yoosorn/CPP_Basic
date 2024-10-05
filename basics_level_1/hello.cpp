@@ -18,6 +18,20 @@ int main()
     std::cout << user_name << std::endl;
     std::cout << secounds_per_hour << std::endl;
     std::cout << max_allowed_temperature << std::endl;
+
+
+    double temerature_list[4] = { 34.2, 22.3 ,34.8 ,100.0};
+    temerature_list[0] = 99.9;
+
+    std::cout << temerature_list[0] << std::endl;
+    std::cout << temerature_list[1] << std::endl;
+    std::cout << temerature_list[2] << std::endl;
+    std::cout << temerature_list[3] << std::endl;
+
+
+
+
+
     
     return 0;
 }
