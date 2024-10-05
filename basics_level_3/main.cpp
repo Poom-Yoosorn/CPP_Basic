@@ -14,6 +14,10 @@ int main()
         cout << "You are officially an Adult Old." << endl;
     }
 
-    cout << "End of program." << endl;
+
+    for (int i = 0; i < 10;i++){
+        cout << "Hello" << i << endl;
+    }
+
     return 0;
 }
