@@ -1,27 +1,30 @@
 #include <iostream>
+using namespace std;
 
-void say_hello(std::string user_name, int user_age)
+namespace CalNum{
+    int triple_number(int number)
+    {
+        return number*3;
+    }
+
+    void print_triple_number(int number)
+    {
+        cout << triple_number(number) << endl;
+        return;
+    }
+};
+
+
+void say_hello(string user_name, int user_age)
 {
-    std::cout << "Hello," << user_name << " your age is "<< user_age << std::endl;
+    cout << "Hello," << user_name << " your age is "<< user_age << endl;
 }
-
-int triple_number(int number)
-{
-    return number*3;
-}
-
-void print_triple_number(int number)
-{
-    std::cout << triple_number(number) << std::endl;
-    return;
-}
-
 
 
 int main()
 {
     say_hello("Poom",54);
     say_hello("Mo",65);
-    print_triple_number(23);
+    CalNum::print_triple_number(44);
     return 0;
 }
