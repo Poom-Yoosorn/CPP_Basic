@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 
 int a;
 
@@ -20,18 +21,24 @@ int main()
     std::cout << max_allowed_temperature << std::endl;
 
 
-    double temerature_list[4] = { 34.2, 22.3 ,34.8 ,100.0};
-    temerature_list[0] = 99.9;
-
-    std::cout << temerature_list[0] << std::endl;
-    std::cout << temerature_list[1] << std::endl;
-    std::cout << temerature_list[2] << std::endl;
-    std::cout << temerature_list[3] << std::endl;
-
+    double temperature_list[4] = { 34.2, 22.3 ,34.8 ,100.0};
+    temperature_list[0] = 99.9;
+    std::cout << temperature_list[0] << std::endl;
+    std::cout << temperature_list[1] << std::endl;
+    std::cout << temperature_list[2] << std::endl;
+    std::cout << temperature_list[3] << std::endl;
 
 
+    std::vector<double> temperatures = { 34.2, 22.3 ,34.8};
+    temperatures.at(0) = 55.5;
+    std::cout << temperatures.at(0) << std::endl;
+    std::cout << temperatures.at(1) << std::endl;
+    std::cout << temperatures.at(2) << std::endl;
+    std::cout << temperatures.size() << std::endl;
 
-
+    temperatures.push_back(17.4);
+    std::cout << temperatures.size() << std::endl;
+    std::cout << temperatures.at(3) << std::endl;
     
     return 0;
 }
