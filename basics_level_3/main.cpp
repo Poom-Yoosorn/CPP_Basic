@@ -14,17 +14,17 @@ int main()
     else{
         cout << "You are officially an Adult Old." << endl;
     }
+//--------------------------------------------------------------------
 
+    for (int i = 0; i < 10;i++){
+        cout << "Hello" << i << endl;
+    }
 
-    // for (int i = 0; i < 10;i++){
-    //     cout << "Hello" << i << endl;
-    // }
-
-    // int i = 0;
-    // while(i < 10){
-    //     cout << "Hello" << i << endl;
-    //     i++;
-    // }
+    int i = 0;
+    while(i < 10){
+        cout << "Hello" << i << endl;
+        i++;
+    }
 
 //--------------------------------------------------------------------
     vector<double> temp_list = {-12.2,-14.6,15.5,78.3};
