@@ -40,5 +40,11 @@ int main()
     std::cout << temperatures.size() << std::endl;
     std::cout << temperatures.at(3) << std::endl;
     
+    std::string user_namess;
+    std::cout << "What is your names? ";
+    std::cin >> user_namess;
+    std::cout << user_namess << std::endl;
+
+
     return 0;
 }
