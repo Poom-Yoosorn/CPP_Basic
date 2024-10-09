@@ -25,7 +25,20 @@ using namespace std;
 
 // }
 
+void add_zero_to_list(vector<int> &number_list, int zero_number); //Prototypes
+void print_list(const vector<int> list);//Prototypes
 
+
+
+
+int main()
+{
+    vector<int> list = {4,6,7};
+    cout << "A Size of number list: " << list.size() << endl;
+    add_zero_to_list(list,4);
+    cout << "B Size of number list: " << list.size() << endl;
+    return 0;
+}
 
 
 //ref style
@@ -47,14 +60,4 @@ void print_list(const vector<int> list)
     for (int number:list){
         cout << number << endl;
     }
-}
-
-
-int main()
-{
-    vector<int> list = {4,6,7};
-    cout << "A Size of number list: " << list.size() << endl;
-    add_zero_to_list(list,4);
-    cout << "B Size of number list: " << list.size() << endl;
-    return 0;
 }
