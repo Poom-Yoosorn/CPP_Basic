@@ -11,6 +11,23 @@ public:
     {
     }
 
+    void say_hi()
+    {
+        cout << "Hello, my name is " << name << ", ready to help" << endl;
+    }
+
+    void init_hardware()
+    {
+        cout << "Init hardware." << endl;
+    }
+
+    void print_info()
+    {
+        say_hi();
+        cout << "Version number : " << version_number << endl;
+        cout << "Temperature : " << internal_temperature << endl;
+    }
+
 private:
     string name;
     int version_number;
@@ -22,6 +39,8 @@ private:
 
 int main()
 {
+
+
 
     return 0;
 }
